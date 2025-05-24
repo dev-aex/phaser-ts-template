@@ -1,23 +1,18 @@
-import Phaser from 'phaser'
+import { WEBGL, Game, Scale } from 'phaser'
 
-const gameConfig: Phaser.Types.Core.GameConfig = {
-  type: Phaser.AUTO,
-  pixelArt: true,
-  scale: {
-    parent: 'game-container',
-    width: 1920,
-    height: 1080,
-    autoCenter: Phaser.Scale.CENTER_BOTH,
-    mode: Phaser.Scale.FIT
-  },
-  physics: {
-    default: 'arcade',
-    arcade: {
-      debug: false
-    }
-  },
-  backgroundColor: '#FFFFFF',
-  scene: []
+const config: Phaser.Types.Core.GameConfig = {
+	type: WEBGL,
+	scale: {
+		parent: 'game-container',
+		width: 1920,
+		height: 1080,
+		autoCenter: Scale.CENTER_BOTH,
+		mode: Scale.FIT,
+	},
+	backgroundColor: '#0f0f0f',
+	scene: [],
 }
 
-new Phaser.Game(gameConfig)
+window.onload = () => {
+	new Game(config)
+}
