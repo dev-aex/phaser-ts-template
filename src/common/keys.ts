@@ -1,5 +1,6 @@
 const SCENES = {
-	PRELOADER: 'PRELOADER',
+	BOOT: 'BOOT',
+	PRELOAD: 'PRELOAD',
 	TITLE: 'TITLE',
 	GAME: 'GAME',
 } as const
