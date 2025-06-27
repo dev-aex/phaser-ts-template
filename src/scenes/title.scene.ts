@@ -1,9 +1,9 @@
 import { Scene } from 'phaser'
-import { SCENES } from '../../common/keys'
+import SCENE from '../common/scenes.keys'
 
 class Title extends Scene {
 	constructor() {
-		super(SCENES.TITLE)
+		super(SCENE.TITLE)
 	}
 
 	create() {
@@ -14,7 +14,7 @@ class Title extends Scene {
 			})
 			.setInteractive({ useHandCursor: true })
 			.on('pointerdown', () => {
-				this.scene.start(SCENES.GAME)
+				this.scene.start(SCENE.GAME)
 			})
 	}
 }

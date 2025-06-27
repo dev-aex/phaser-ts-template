@@ -1,9 +1,9 @@
 import { Scene } from 'phaser'
-import { SCENES } from '../../common/keys'
+import SCENE from '../common/scenes.keys'
 
 class MainGame extends Scene {
 	constructor() {
-		super(SCENES.GAME)
+		super(SCENE.GAME)
 	}
 	create() {}
 }

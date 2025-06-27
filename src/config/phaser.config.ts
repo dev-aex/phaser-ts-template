@@ -1,10 +1,10 @@
 import { AUTO, Game, Scale } from 'phaser'
 import type { Types } from 'phaser'
 
-import Boot from '../game/boot'
-import Preload from '../game/preloader'
-import Title from '../game/title'
-import MainGame from '../game/scenes/game'
+import Boot from '../scenes/boot.scene'
+import Preload from '../scenes/preload.scene'
+import Title from '../scenes/title.scene'
+import MainGame from '../scenes/game.scene'
 
 const config: Types.Core.GameConfig = {
 	type: AUTO,

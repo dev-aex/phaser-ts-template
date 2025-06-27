@@ -1,13 +1,13 @@
 import { Scene } from 'phaser'
-import { SCENES } from '../common/keys'
+import SCENE from '../common/scenes.keys'
 
 class Boot extends Scene {
 	constructor() {
-		super(SCENES.BOOT)
+		super(SCENE.BOOT)
 	}
 
 	create() {
-		this.scene.start(SCENES.PRELOAD)
+		this.scene.start(SCENE.PRELOAD)
 	}
 }
 
