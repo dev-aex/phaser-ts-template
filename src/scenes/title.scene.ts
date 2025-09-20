@@ -1,4 +1,5 @@
 import { Scene } from 'phaser'
+
 import SCENE from '../common/scenes.keys'
 
 class Title extends Scene {
